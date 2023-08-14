@@ -720,7 +720,7 @@ class Uri implements UriInterface
      */
     public function getQuery(): string
     {
-        return $this->query;
+        return $this->query ?? '';
     }
 
     /**
@@ -735,7 +735,7 @@ class Uri implements UriInterface
      */
     public function getFragment(): string
     {
-        return $this->fragment;
+        return $this->fragment ?? '';
     }
 
     /**
